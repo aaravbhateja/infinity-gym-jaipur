@@ -87,7 +87,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero__eyebrow{margin-bottom:18px}
 .hero__title{margin:0;font-weight:900;font-stretch:125%;text-transform:uppercase;line-height:.86;letter-spacing:-.02em;font-size:clamp(56px,13.2vw,210px)}
 .hero__title .line{display:block;overflow:hidden;padding-bottom:.04em;white-space:nowrap}
-.hero__title .split{white-space:nowrap}
+.hero__title .split{white-space:nowrap;display:inline-block}
 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
 @supports not (-webkit-text-stroke:2px #fff){.outline{color:var(--ink)}}
 .split .ch{display:inline-block;transform:translateY(105%);transition:transform 1.1s var(--ease)}
