@@ -24,7 +24,7 @@
     if (!title) return;
     title.style.fontSize = '';
     const avail = title.clientWidth;
-    const widest = Math.max(...$$('.split', title).map(s => s.scrollWidth));
+    const widest = Math.max(...$$('.split', title).map(s => s.getBoundingClientRect().width));
     if (widest > avail) {
       const cur = parseFloat(getComputedStyle(title).fontSize);
       title.style.fontSize = Math.floor(cur * avail / widest * 0.98) + 'px';
